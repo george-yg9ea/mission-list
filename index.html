@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTA San Andreas Mission Tracker</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="title-wrapper">
+      <h1 class="mission-list">Mission List</h1>
+    </div>
+    <img src="gta_image.png" alt="GTA San Andreas Image" class="gta-image">
+  </div>
+
+<!-- Screen 1 -->
+<div id="screen1" class="screen">
+    <div class="mission-entry">
+      <form id="missionForm" class="mission-form">
+        <input type="text" id="missionInput" class="mission-input" placeholder="Enter Mission Here">
+        <br> <!-- Add a line break -->
+        <button type="submit" id="enterButton" class="enter-button">Enter</button>
+      </form>
+    </div>
+  </div>  
+
+<!-- Screen 2 -->
+<div id="screen2" class="screen hidden">
+    <div class="mission-entry">
+      <div class="mission-completion">
+        <h2 id="missionPassed" class="mission-passed hidden">Mission Passed!</h2>
+        <h2 id="respectPlus" class="respect-plus hidden">Respect+</h2>
+      </div>
+    </div>
+  <!-- Mission Info Wrapper -->
+  <div class="mission-info-wrapper">
+    <button id="newMission" class="new-mission">New Mission</button>
+    <p id="missionName" class="mission-name"></p>
+  </div>  
+</div>
+  
+  <!-- Audio Element -->
+  <audio id="missionCompleteAudio" src="audio/mission_complete.mp3"></audio>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

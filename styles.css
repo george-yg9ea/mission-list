@@ -1,0 +1,214 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative; /* Ensure body can contain absolute elements */
+  }
+  
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+  }
+  
+  .gta-image {
+    width: 540px;
+    height: 210px;
+    object-fit: cover; /* Ensures the image is not stretched */
+  }
+  
+  .screen {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    flex: 1; /* Expand to fill available space */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .mission-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+  }
+  
+  #missionInput {
+    color: #866327;
+    text-align: center;
+    font-family: Pricedown;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96px; /* 96% */
+    padding: 0; /* Adjust padding to 0 */
+    margin: 0;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  #missionInput::placeholder {
+    color: #866327;
+    text-align: center;
+    font-family: Pricedown;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96px; /* 96% */
+    padding: 0;
+    margin: 0;
+  }
+  
+  #enterButton {
+    color: #4B5868;
+    text-align: center;
+    font-family: BankGothic, sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 114.286% */
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent; /* No background color */
+    cursor: pointer;
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+#enterButton:hover {
+    color: #B0C9EB; /* Text color changes on hover */
+}
+
+#enterButton.active {
+    opacity: 1; /* Opacity set to 1 when active */
+}
+
+#newMission {
+    color: #4B5868;
+    text-align: center;
+    font-family: BankGothic, sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 114.286% */
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent; /* No background color */
+    cursor: pointer;
+    opacity: 1; /* Ensure button is visible */
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+#newMission:hover {
+    color: #B0C9EB; /* Text color changes on hover */
+}
+
+  
+  #missionPassed {
+    color: #866327;
+    text-align: center;
+    font-family: Pricedown;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96px; /* 96% */
+    margin: 0;
+    padding: 0;
+  }
+  
+  #respectPlus {
+    color: #CCCACA;
+    text-align: center;
+    font-family: Pricedown;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96px; /* 96% */
+    margin: 0;
+    padding: 0;
+  }
+  
+  #newMission {
+    color: #4B5868;
+    text-align: center;
+    font-family: BankGothic, sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 114.286% */
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent; /* No background color */
+    cursor: pointer;
+  }
+  
+  #newMission:hover {
+    color: #B0C9EB; /* Text color changes on hover */
+  }
+  
+  #missionName {
+    color: #866327;
+    text-align: right;
+    font-family: Pricedown;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; /* 100% */
+    margin: 48px;
+  }
+  
+  .title-wrapper {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    padding-top: 48px; /* Add padding top */
+    padding-left: 56px; /* Add left padding */
+  }
+  
+  .mission-list {
+    color: #B0C9EB;
+    font-family: 'Diploma', sans-serif;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 84px;
+    padding-left: 0; /* Remove left padding */
+    margin: 0;
+  }
+  
+  /* Styles for Screen 2 */
+  
+  .mission-completion {
+    position: relative; /* Ensure relative positioning */
+  }
+  
+  .mission-info-wrapper {
+    position: absolute;
+    bottom: 0; /* Align to the bottom of screen2 */
+    left: 20px; /* Align button to the left */
+    right: 20px; /* Align mission name to the right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0; /* Remove bottom padding */
+  }
